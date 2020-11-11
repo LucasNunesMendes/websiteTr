@@ -1,49 +1,13 @@
-.apresentacao{
-    position: absolute;
-    left: 0vw;
-    width: 60vw;
-    height: 100vh;
-    background: linear-gradient(to right, rgb(88, 199, 243), rgb(117, 165, 253));
-    transform: skew(-0deg);
-    transform-origin: top;
-    z-index: -2
-}
+
 .background-test{
     position: absolute;
-    left: 60vw;
-    width: 40vw;
+    width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right, rgb(75, 138, 85), rgb(72, 124, 95));
-    transform: skew(-0deg);
+    background: linear-gradient(to right, rgb(48, 61, 133), rgb(18, 114, 61));
+    transform: skew(0deg);
     transform-origin: top;
     z-index: -2
 }
-
-.apresentacao p{
-    position: absolute;
-    font-family: 'Fjalla One', sans-serif;
-    color:rgb(4, 66, 77);
-    font-size: calc(18px + 6vw);
-    text-align: center;
-}
-.apresentacao img{
-    margin-top: 4.8vh;
-    margin-left: 4vw;
-    width: 46vw;
-}
-
-.login-all{
-    width: 100%;
-    height: 100%;
-}
-
-.login-logo{
-    margin-top: 15vh;
-}
-div#login-content{
-    margin-right: 5vw;
-}
-
 
 /* logotipo Text and content */
 
@@ -59,11 +23,11 @@ div#login-content{
 
 }
 
+/* Forms */
 
 #modal-login form{
     margin-top: 4vh;
 }
-
 
 
 /* Check-box,links for recovery and new registers */
@@ -73,36 +37,29 @@ div#login-content{
 }
 
 #acess{
-    background-color: #3b4483;
+    background-color: rgb(38, 64, 209);
     border: 1px solid white;
 }
 #acess:hover{
-    background-color: #1452d8;
+    background-color: #052161;
 }
 
 [for='remember']{
     color:#fbfdff;
 }
 
+/* login card */
+
 .card{
     margin-top: 4vh;
 }
-/* gliph-icons */
 
+
+/* gliph-icons */
 #email-icon,#lock-icon{
     background-color: white;
 }
 span.fas.fa-envelope,span.fas.fa-lock{
     color:#f4b95f;
-}
-
-#image-aside{
-    width:20vw;
-}
-
-/* imagem */
-
-.img-fluid{
-    width:20vw;
 }
 
