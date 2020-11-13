@@ -19,8 +19,9 @@
   <!-- Google Font: Source Sans Pro -->
 </head>
 <body class="hold-transition login-page">
-  <div class="background-test"></div>
-    <div class="login-all content-fluid">
+  <div class="background-fixed"></div>
+
+    <div class="login-all content">
       <div id="login-content">
         <div class="login-logo">
           <img id="text-logotipo"src="./img/logo_negativo.png" alt="GRT logotipo" class="navbar-brand">
@@ -28,7 +29,7 @@
         <!-- /.login-logo -->
         <div class="card">
           <div id="modal-login" class="card-body login-card-body">
-            <form action="../../index3.html" method="post">
+            <form action="#" method="post">
               <div class="input-group mb-3">
                 <input type="email" class="form-control" placeholder="Email">
                 <div class="input-group-append">
@@ -56,7 +57,9 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-4">
-                  <button id="acess" type="submit" class="btn btn-primary btn-block">Acessar</button>
+                  
+                    <button id="acess" type="submit" class="btn btn-primary btn-block">Acessar</button>
+                  
                 </div>
                 <!-- /.col -->
               </div>
@@ -64,10 +67,10 @@
             <!-- /.social-auth-links -->
       
             <p class="mb-1">
-              <a href="forgot-password.html">Esqueci minha senha</a>
+              <a id="RecoveryPassword" href="forgot-password.html">Esqueci minha senha</a>
             </p>
             <p class="mb-0">
-              <a href="register.html" class="text-center">Novo membro</a>
+              <a href="./newMembers.html" class="text-center">Novo membro</a>
             </p>
           </div>
           <!-- /.login-card-body -->
@@ -77,10 +80,8 @@
       </div>
     </div>
       
-  
-  
-
-<!-- /.login-box -->
+<!-- LoginScript -->
+<script src="/js/loginScripts.js"></script>
 
 <!-- jQuery -->
 <script src="./js/jquery.min.js"></script>

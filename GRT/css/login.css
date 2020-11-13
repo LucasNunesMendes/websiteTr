@@ -1,8 +1,8 @@
 
-.background-test{
+.background-fixed{
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background: linear-gradient(to right, rgb(48, 61, 133), rgb(18, 114, 61));
     transform: skew(0deg);
     transform-origin: top;
@@ -19,7 +19,7 @@
 #modal-login{
     box-shadow: -1px -1px -18px -1px rgb(255, 255, 255);
     background-color: #1c1e20;
-    height: 48vh;
+    min-height: 48vh;
 
 }
 
@@ -27,6 +27,13 @@
 
 #modal-login form{
     margin-top: 4vh;
+}
+/* all content in card/form */
+.card{
+    margin-top: 4.5;
+    min-height:280px;
+    height: 45vh;
+    
 }
 
 
@@ -43,17 +50,11 @@
 #acess:hover{
     background-color: #052161;
 }
+/* lembre-me */
 
 [for='remember']{
     color:#fbfdff;
 }
-
-/* login card */
-
-.card{
-    margin-top: 4vh;
-}
-
 
 /* gliph-icons */
 #email-icon,#lock-icon{
@@ -63,3 +64,90 @@ span.fas.fa-envelope,span.fas.fa-lock{
     color:#f4b95f;
 }
 
+/* Extra Larger and Larger */
+@media (min-width:1200px){
+
+
+    #acess{
+        font-size: calc(1.3vw);
+        font-style: bold;
+        min-height: 30px;
+        height: 7vh;
+    }
+    .card{
+        margin-top: 4.5;
+        min-height: 270px;
+        height: 50vh;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+
+    /* button */
+    #acess{
+        font-size: calc(11px + 0.3vw);
+        font-style: bold;
+        min-height: 40px;
+        height: 8vh;
+    }
+    .card{
+        margin-top: 4.5;
+        min-height: 270px;
+        height: 52vh;
+    }
+
+}
+@media (min-width:768px) and (max-width:991px){
+
+
+    #acess{
+        font-size: calc(11px + 0.27vw);
+        font-style: bold;
+        height: 8vh;
+    }
+    .card{
+        margin-top: 4.5;
+        min-height: 270px;
+        height: 52vh;
+    }
+    
+
+    /* button */
+}
+@media (min-width:576px) and (max-width:767px){
+
+    #text-logotipo{
+        width: calc(100px + 28vw);
+        z-index: 2;
+    }
+
+    #acess{
+        font-size: calc(11px + 0.4vw);
+        font-style: bold;
+        height: 6vw;
+        min-height: 30px;
+    
+    }
+    .card{
+        margin-top: 4.5;
+        height: 20vh;
+        min-height: 270px;
+    }
+
+}
+@media (max-width:575px){
+    #text-logotipo{
+        width: calc(100px + 42vw);
+        z-index: 2;
+    }
+    #acess{
+        font-size: calc(11px + 0.9vw);
+        font-style: bold;
+        min-height: 40px;
+        height: 8vh;
+    }
+    .card{
+        margin-top: 4.5;
+        min-height: 270px;
+    }
+}
